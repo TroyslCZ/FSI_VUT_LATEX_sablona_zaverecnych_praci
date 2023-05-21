@@ -1,2 +1,2 @@
-# FSI_VUT_LATEX_sablona_zaverecnych_praci
+# FSI VUT \LaTeX Šablona závěrečných prací
 Šablona závěrečných prací v systému LATEX pro Fakultu strojního inženýrství na Vysokém učení technickém v Brně
