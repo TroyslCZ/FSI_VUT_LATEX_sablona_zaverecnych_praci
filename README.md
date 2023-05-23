@@ -21,7 +21,7 @@
 
 2. `kapitoly` - složka pro ukládání souborů ve formátu `.tex` s textovým obsahem jednotlivých kapitol. Kapitoly *ÚVOD* a *ZÁVĚR* pojmenovat jako `00_uvod.tex` a `00_zaver.tex`.
 
-3. `loga` - složka s logy fakulty a univerzity, které jsou použity v šabloně.
+3. `loga` - složka s logy fakulty a univerzity, která jsou použita v šabloně.
 
 4. `obrázky` - složka pro ukládání obrázků použitých v textu práce.
 
