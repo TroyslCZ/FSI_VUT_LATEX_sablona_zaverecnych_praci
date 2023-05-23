@@ -46,6 +46,16 @@
 	\singlechars{czech}{AaIiVvOoUuSsZzKk}
   	\compoundinitials{czech}{Ch,CH}
   	\enablesplithyphens{czech}
+\usepackage{csquotes}
+	\DeclareQuoteAlias{german}{czech}
+	\MakeOuterQuote{"}
+
+%% ÚPRAVA DĚLENÉ SLOV NA ZÁKLADĚ KOREKTURY
+%  Ukazuje překladači jak správně dělit slova,
+%  která byla korekturou označena jako špatně rozdělená.
+\hyphenation{nej-po-uží-va-něj-ších}
+\hyphenation{po-uži-ta}
+
 
 %--------------------------------%
 
@@ -92,7 +102,7 @@
 %  v originálním jazyce závěrečné práce a druhé pole je pro překlad abstraktu
 %  slov do sekundárního jazyka závěrečné práce.
 \abstrakt
-{\LaTeX\ jako nástroj pro profesionální sazbu dokumentů je velmi oblíbený a jeho obliba stále roste. Nepřeberné množství balíčků, které rozšiřují jeho základní funkcionality, umožňují \LaTeX\ využít v nejrůznějších odvětvích. Mnohé univerzity mají vytvořenou svou vlastní šablonu pro tvorbu závěrečných prací v systému \LaTeX, a proto vznikla myšlenka vytvořit jednoduchou na pochopení a uživatelsky přívětivou šablonu i pro Fakultu strojního inženýrství na Vysokém učení technickém v Brně. Kromě přehledu online i offline/desktopových \LaTeX\ editorů se tato bakalářská práce věnuje popisu fungování vytvořené šablony včetně množství příkladů a poslouží tak jako příručka pro budoucí studenty závěrečných ročníků, kteří se rozhodnou využít \LaTeX\ pro svou závěrečnou práci.}
+{\LaTeX\ jako nástroj pro profesionální sazbu dokumentů je velmi oblíbený a jeho obliba stále roste. Nepřeberné množství balíčků, které rozšiřují jeho základní funkcionality, umožňuje \LaTeX\ využít v nejrůznějších odvětvích. Mnohé univerzity mají vytvořenou svou vlastní šablonu pro tvorbu závěrečných prací v systému \LaTeX, a proto vznikla myšlenka vytvořit na pochopení jednoduchou a uživatelsky přívětivou šablonu i pro Fakultu strojního inženýrství na Vysokém učení technickém v Brně. Kromě přehledu online i offline/desktopových \LaTeX\ editorů se tato bakalářská práce věnuje popisu fungování vytvořené šablony včetně množství příkladů a poslouží tak jako příručka pro budoucí studenty závěrečných ročníků, kteří se rozhodnou využít \LaTeX\ pro svou závěrečnou práci.}
 {\LaTeX\, as a professional document typesetting tool, is widespread, and its popularity is growing. Many packages extending its basic functionality allow \LaTeX\ to be used in various industries. Many universities use the \LaTeX\ to create templates for final theses. Therefore the idea of creating an easy-to-understand template for the Faculty of Mechanical Engineering at Brno University of Technology was born. In addition to an overview of online and offline/desktop \LaTeX\ editors, this bachelor's thesis is dedicated to being a user-friendly manual of the created template, including several examples. It thus serves as a guide for future final-year students who decide to use \LaTeX\ for their final thesis.}
 
 %% KLÍČOVÁ SLOVA
@@ -101,8 +111,8 @@
 %  v originálním jazyce závěrečné práce a druhé pole je pro překlad klíčových
 %  slov do sekundárního jazyka závěrečné práce.
 \klicovaslova
-{\LaTeX\ šablona, šablona závěrečných prací, programování v \LaTeX, \TeX, \LaTeX\ editor, formátování textu v \LaTeX.}
-{\LaTeX\ template, final thesis template, \LaTeX\ programming, \TeX, \LaTeX\ editor, text formating in \LaTeX.}
+{\LaTeX\ šablona, šablona závěrečných prací, programování v \LaTeX, \TeX, \LaTeX\ editor, formátování textu v \LaTeX}
+{\LaTeX\ template, final thesis template, \LaTeX\ programming, \TeX, \LaTeX\ editor, text formating in \LaTeX}
 
 %% BIBLIOGRAFICKÁ CITACE
 %  Automaticky vytvoří vlastní citaci závěrečné práce.
@@ -114,13 +124,13 @@
 \prohlaseni
 {Prohlašuji, že tato práce je mým původním dílem, vypracoval jsem ji samostatně pod vedením vedoucího práce a s použitím odborné literatury a dalších informačních zdrojů, které jsou všechny citovány v práci a uvedeny v seznamu literatury.
 
-Jako autor uvedené práce dále prohlašuji, že v souvislosti s vytvořením této práce jsem neporušil autorská práva třetích osob, zejména jsem nezasáhl nedovoleným způsobem do cizích autorských práv osobnostních a jsem si plně vědom následků porušení ustanovení § 11 a následujících autorského zákona č. 121/2000 Sb., včetně možných trestněprávních důsledků.}
+Jako autor uvedené práce dále prohlašuji, že v souvislosti s vytvořením této práce jsem neporušil autorská práva třetích osob, zejména jsem nezasáhl nedovoleným způsobem do cizích autorských práv osobnostních, a jsem si plně vědom následků porušení ustanovení § 11 a následujících autorského zákona č. 121/2000 Sb., včetně možných trestněprávních důsledků.}
 
 %% PODĚKOVÁNÍ
 %  Vytvoří poděkování závěrečné práce. Poděkování je nepovinné a jeho
 %  vlastní text se vepisuje přímo do tohoto pole.
 \podekovani
-{Rád bych poděkoval svému vedoucímu práce Ing. Kamilu Staňkovi za vedení, pravidelné konzultace, věcné návrhy a přípomínky a hodnocení jednotlivých etap tvorby a psaní bakalářské práce. Zároveň děkuji své rodině a kamarádům za podporu nejen při psaní této závěrečné práce.}
+{Rád bych poděkoval svému vedoucímu práce Ing. Kamilu Staňkovi za vedení, pravidelné konzultace, věcné návrhy a připomínky a hodnocení jednotlivých etap tvorby a psaní bakalářské práce. Zároveň děkuji své rodině a kamarádům za podporu nejen při psaní této závěrečné práce.}
 
 %% OBSAH
 %  Vytvoří obsah ze všech kapitol.
