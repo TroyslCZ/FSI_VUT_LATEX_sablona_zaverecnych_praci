@@ -3,9 +3,9 @@
 %--------------------------------%
 
 \chapter{VLASTNÍ ŘEŠENÍ}
-Snahou autora bylo vytvořit šablonu tak, aby s ní dokázal pracovat i úplný laik. Z tohoto důvodu je i tato bakalářská práce psána záměrně jednoduchým stylem, aby bylo možné ji použít i jako referenční příručky pro práci se šablonou.
+Snahou autora bylo vytvořit šablonu tak, aby s ní dokázal pracovat i úplný laik. Z tohoto důvodu je i tato bakalářská práce psána záměrně jednoduchým stylem, aby bylo možné ji použít i jako referenční příručku pro práci se šablonou.
 
-Na několika fakultách VUT jsou dostupné jejich vlastní \LaTeX\ šablony, které jsou však v některých případech zbytečně složité. Jejich zdrojový kód obsahuje několik tisíc řádků, z nichž jsou stovky ve formě poznámek vzniklých jednotlivými úpravami a zásahy do původního kódu. Autorem vytvořená šablona je strukturována do souvisejících celků, které jsou ve zdrojovém kódu přehledně odděleny. Jednotlivé části těchto celků jsou popsány tak, aby je bylo možné lépe pochopit a používat v praxi.
+Na několika fakultách VUT jsou dostupné jejich vlastní \LaTeX\ šablony, které jsou však v některých případech zbytečně složité. Jejich zdrojový kód obsahuje několik tisíc řádků, z nichž stovky jsou ve formě poznámek vzniklých jednotlivými úpravami a zásahy do původního kódu. Autorem vytvořená šablona je strukturována do souvisejících celků, které jsou ve zdrojovém kódu přehledně odděleny. Jednotlivé části těchto celků jsou popsány tak, aby je bylo možné lépe pochopit a používat v praxi.
 
 
 
@@ -16,22 +16,22 @@ Na základě vlastních zkušeností autora této závěrečné práce je doporu
 
 \vspace{8pt}
 \textbf{\TeX maker}\\
-Editor, ve kterém vznikla tato celá závěrečná práce i samotná šablona. Autor oceňuje přehledné a jednoduché nastavení editoru s možností programování tlačítka \uv{\textit{Rychlý překlad}} pro nejrychlejší a nejpohodlnější způsob překladu zdrojového textu. Velkou výhodu autor nachází také v možnosti rychlého přepínání zabudovaných překladačů jazyka \TeX.
+Editor, ve kterém vznikla celá tato závěrečná práce i samotná šablona. Autor oceňuje přehledné a jednoduché nastavení editoru s možností programování tlačítka \textit{"Rychlý překlad"} pro nejrychlejší a nejpohodlnější způsob překladu zdrojového textu. Velkou výhodu autor nachází také v možnosti rychlého přepínání zabudovaných překladačů jazyka \TeX.
 
-Velkým pomocníkem při tvorbě práce byla možnost zvolení hlavního dokumentu. Editor umožňuje při otevření více souborů současně volbu \uv{\textit{Prohlásit současný dokument za hlavní.}} To znamená, že autor práce nemusel myslet na to, ve kterém souboru se zrovna nachází, ale nastavit si jeden soubor jako hlavní, který se bude automaticky překládat. V případě této závěrečné práce se vždy jednalo o hlavní pracovní soubor \verb|zaverecna_prace.tex|.
+Velkým pomocníkem při tvorbě práce byla možnost zvolení hlavního dokumentu. Editor umožňuje při otevření více souborů současně volbu \textit{"Prohlásit současný dokument za hlavní"}. To znamená, že autor práce nemusel myslet na to, ve kterém souboru se zrovna nachází, ale mohl si nastavit jeden soubor jako hlavní, který se bude automaticky překládat. V případě této závěrečné práce se vždy jednalo o hlavní pracovní soubor \verb|zaverecna_prace.tex|.
 
 Autorem práce nalezená nevýhoda je nemožnost vytvářet poznámky či značky v jednotlivých dokumentech a označit si tak místo, ke kterému se potřebuje později vrátit, případně místo, které je problémové. Další nevýhodou je pomalejší překlad oproti Overleaf editoru.
 
 \vspace{8pt}
 \textbf{Overleaf}\\
-Editor Overleaf byl využíván souběžně s editorem \TeX maker pro kontrolu funkčnosti šablony i v online prostředí. Za neocenitelnou funkcionalitu tohoto editoru je autorem práce považována automatické přepínání překladačů jazyka \TeX\ a víceprůchodový překlad. Není potřeba přepínat mezi překladačem jazyka \TeX\ a programem BIB\TeX\ pro překlad citací, Overleaf udělá vše automaticky a dokument zároveň přeloží víceprůchodově, takže je hned vidět výsledný dokument ve finální verzi.
+Editor Overleaf byl využíván souběžně s editorem \TeX maker pro kontrolu funkčnosti šablony i v online prostředí. Za neocenitelnou funkcionalitu tohoto editoru je autorem práce považováno automatické přepínání překladačů jazyka \TeX\ a víceprůchodový překlad. Není potřeba přepínat mezi překladačem jazyka \TeX\ a programem BIB\TeX\ pro překlad citací, Overleaf udělá vše automaticky a dokument zároveň přeloží víceprůchodově, takže je hned vidět výsledný dokument ve finální verzi.
 
 Zmiňovaná nevýhoda \TeX maker editoru v podobně vytváření poznámek se zde nenachází. Overleaf nabízí možnost komentování jednotlivých příkazů zdrojového textu a také zobrazení seznamu těchto komentářů. Editor Overleaf běží na serverech poskytovatele, které jsou (pravděpodobně) výkonnější než počítačová sestava autora práce, proto editor nabízí rychlejší překlad zdrojového kódu dokumentu.
 
 
 
 \section{Základní rozdělení šablony}
-Šablona závěrečných prací pro svou funkčnost vyžaduje 3 soubory, které dohromady utvářejí celou šablonu:
+Šablona závěrečných prací pro svou funkčnost vyžaduje tři soubory, které dohromady utvářejí celou šablonu:
 
 \begin{enumerate}
 	\item \verb|sablona.sty|,
@@ -42,10 +42,10 @@ Zmiňovaná nevýhoda \TeX maker editoru v podobně vytváření poznámek se zd
 V adresáři se šablonou je také vytvořeno několik složek, ve kterých jsou uloženy další soubory, které jsou v šabloně využívány. Jedná se o složky:
 
 \begin{enumerate}
-	\item \verb|fonty| -- obsahuje soubory VUT fontů, které šablona využívá pro tvorbu hlavičky každé strany dokumentu.
-	\item \verb|kapitoly| -- složka pro vkládání souborů s textovým obsahem jednotlivých kapitol.
-	\item \verb|loga| -- obsahuje loga VUT a FSI, které šablona vkládá do hlavičky dokumentu.
-	\item \verb|obrázky| -- složka pro ukládání obrázků použitých v závěrečné práci.
+	\item \verb|fonty| -- obsahuje soubory VUT fontů, které šablona využívá pro tvorbu hlavičky každé strany dokumentu;
+	\item \verb|kapitoly| -- složka pro vkládání souborů s textovým obsahem jednotlivých kapitol;
+	\item \verb|loga| -- obsahuje loga VUT a FSI, která šablona vkládá do hlavičky dokumentu;
+	\item \verb|obrázky| -- složka pro ukládání obrázků použitých v závěrečné práci;
 	\item \verb|soubory| -- obsahuje PDF soubory úvodní strany a zadání závěrečné práce stažené ze Studisu.
 \end{enumerate}
 
@@ -58,8 +58,8 @@ Funkce, nastavení a použití těchto souborů jsou popsány v následujících
 Uživatel provádí dostupná nastavení šablony v souboru \verb|nastaveni.tex|. Jedná se o textový soubor obsahující několik vytvořených příkazů. Každý příkaz má jeden či více argumentů, které může uživatel libovolně měnit. Tyto příkazy jsou rozděleny do dvou ucelených částí:
 
 \begin{enumerate}
-	\item Základní údaje o závěrečné práci.
-	\item Vzhled dokumentu.
+	\item základní údaje o závěrečné práci,
+	\item vzhled dokumentu.
 \end{enumerate}
 
 
@@ -81,9 +81,9 @@ Jako argument slouží zkratky:
 	\item \verb|phd| = dizertační práce.
 \end{itemize}
 
-Jednotlivé možnosti jsou předvyplněny -- uživatel tak pouze vybere požadovaný typ závěrečné práce. Zbylé možnost je možné smazat anebo okomentovat pomocí symbolu \verb|%| na začátku řádku.
+Jednotlivé možnosti jsou předvyplněny -- uživatel tak pouze vybere požadovaný typ závěrečné práce. Zbylé možnosti je možné smazat anebo okomentovat pomocí symbolu \verb|%| na začátku řádku.
 
-Pokud uživatel zadá chybnou nebo neznámou zkratku, bude argument nahrazen chybovou hláškou \textit{\uv{Nezadán/neznámý typ práce}}.
+Pokud uživatel zadá chybnou nebo neznámou zkratku, bude argument nahrazen chybovou hláškou \textit{"Nezadán/neznámý typ práce"}.
 
 \vspace{8pt}
 \textbf{Název závěrečné práce}\\
@@ -107,7 +107,7 @@ Příkaz: \verb|\autor{}{}{}{}|.\\
 Výchozí nastavení: \verb|bez argumentů|.\\
 Příklad: \verb|\autor{Ing.}{Student}{Zkoušený}{Ph.D}|.
 
-Příkaz má 4 argumenty v následujícím pořadí:
+Příkaz má čtyři argumenty v následujícím pořadí:
 
 \begin{itemize}[label={-}]
 	\item \verb|tituly před jménem|,
@@ -149,7 +149,7 @@ Na výběr jsou následující ústavy:
 	\item Ústav strojírenské technologie,
 	\item Ústav výrobních strojů, systémů a robotiky,
 	\item Ústav procesního inženýrství,
-	\item Ústav automobilního a dopravního inženýrsví,
+	\item Ústav automobilního a dopravního inženýrství,
 	\item Letecký ústav,
 	\item Ústav automatizace a informatiky,
 	\item Ústav jazyků.
@@ -187,15 +187,15 @@ Argument se zadává ve formátu \verb|DD. MM. RRRR| (D = den, M = měsíc, R = 
 Příkaz: \verb|\jazyk{}|.\\
 Výchozí nastavení: \verb|\jazyk{cz-en}|.
 
-Argumentem příkazu je zkratka jazyků (hlavní a vedlejší), ve kterých je závěrečná práce napsána. Hlavní jazyk je jazyk, ve kterém je napsán vlastní textový obsah práce, vedlejší jazyk je použit pro sekundární nadpisy na úvodní straně a pro překlad abstraktu a klíčových slov. Uživatel si vybere požadovanou volbu z předvyplněných možností.
+Argumentem příkazu je zkratka jazyků (hlavní a vedlejší), ve kterých je závěrečná práce napsána. Hlavní jazyk je jazyk, ve kterém je napsán vlastní textový obsah práce, vedlejší jazyk je použit pro sekundární nadpisy na titulní straně a pro překlad abstraktu a klíčových slov. Uživatel si vybere požadovanou volbu z předvyplněných možností.
 
 Argument je ve formátu \verb|xx-yy| (xx = zkratka hlavního jazyka, yy = zkratka vedlejšího jazyka). Šablona podporuje následující jazykové mutace:
 
 \begin{itemize}[label={-}]
-	\item \verb|cz-en| hlavní jazyk: čeština, vedlejší jazyk: angličtina,
-	\item \verb|sk-en| hlavní jazyk: slovenština, vedlejší jazyk: angličtina,
-	\item \verb|en-cz| hlavní jazyk: angličtina, vedlejší jazyk: čeština,
-	\item \verb|en-sk| hlavní jazyk: angličtina, vedlejší jazyk: slovenština,.
+	\item \verb|cz-en| hlavní jazyk: čeština, vedlejší jazyk: angličtina;
+	\item \verb|sk-en| hlavní jazyk: slovenština, vedlejší jazyk: angličtina;
+	\item \verb|en-cz| hlavní jazyk: angličtina, vedlejší jazyk: čeština;
+	\item \verb|en-sk| hlavní jazyk: angličtina, vedlejší jazyk: slovenština.
 \end{itemize}
 
 Pokud nebude vybrána žádná nebo nesprávná možnost, bude automaticky nastavena volba \verb|cz-en|.
@@ -231,7 +231,7 @@ Příkaz umožňuje nastavit styl číslování. Uživatel má při číslován�
 	\item Číslo obrázku, tabulky a rovnice neobsahuje číslo kapitoly a bude pouze ve formátu: \verb|Obrázek 3: Rozložení pracovních sil ve firmě|.
 \end{enumerate}
 
-Výchozí hodnou je možnost č. 2, která bude rovněž nastavena v případě nezvolení žádné možnosti nebo vyplnění chybného čísla.
+Výchozí hodnotou je možnost č. 2, která bude rovněž nastavena v případě nezvolení žádné možnosti nebo vyplnění chybného čísla.
 
 
 
@@ -241,10 +241,10 @@ Hlavním pracovním souborem je soubor \verb|zaverecna_prace.tex|. Tímto soubor
 Soubor je rozdělen na čtyři celky:
 
 \begin{enumerate}
-	\item Základní nastavení dokumentu,
-	\item Vlastní text práce,
-	\item Seznamy,
-	\item Přílohy.
+	\item základní nastavení dokumentu,
+	\item vlastní text práce,
+	\item seznamy,
+	\item přílohy.
 \end{enumerate}
 
 Pozn.: V hlavním pracovním souboru je důležitá posloupnost příkazů. V pořadí, ve kterém jsou příkazy za sebou poskládány, budou systémem \LaTeX\ také provedeny. Na toto je znovu upozorněno v kritických místech.
@@ -286,7 +286,7 @@ Výchozí nastavení:
 	\item[ ]\hspace{70pt}\verb|{soubory/zadani}|.
 \end{itemize}
 
-Titulní strana a zadání závěrečné práce jsou dokumenty ve formátu PDF. Oba soubory jsou vygenerovány ve Studisu a je možné je stáhnout a uložit do složky \verb|soubory| v adresáři se šablonou. Z důvodu usnadnění práce se šablonou je nutné soubory pojmenovat jako \verb|titulni_strana.pdf| a \verb|zadani.pdf|. Uživatel poté nemusí ručně přepisovat příkaz pro import obou dokumentů a může využít výchozí nastavení. Zadání práce je pomocí argumentů \verb|trim| a \verb|offset| ořezáno a posunuto tak, aby respektoval okraje stránky o velikosti 3 cm kvůli vazbě dokumentu.
+Titulní strana a zadání závěrečné práce jsou dokumenty ve formátu PDF. Oba soubory jsou vygenerovány ve Studisu a je možné je stáhnout a uložit do složky \verb|soubory| v adresáři se šablonou. Z důvodu usnadnění práce se šablonou je nutné soubory pojmenovat jako \verb|titulni_strana.pdf| a \verb|zadani.pdf|. Uživatel poté nemusí ručně přepisovat příkaz pro import obou dokumentů a může využít výchozí nastavení. Zadání práce je pomocí argumentů \verb|trim| a \verb|offset| ořezáno a posunuto tak, aby respektovalo okraje stránky o velikosti 3 cm kvůli vazbě dokumentu.
 
 \vspace{8pt}
 
@@ -345,7 +345,7 @@ Závěrečná část celého celku. Uživatel zde vkládá jednotlivé kapitoly.
 
 Kapitoly je možné psát do jednoho souboru s příponou \verb|.tex| nebo každou kapitolu zvlášť. Soubory s kapitolami je možné ukládat pod libovolnými názvy do složky \verb|kapitoly| v hlavním adresáři šablony.
 
-Kapitoly \uv{Úvod} a \uv{Závěr} se sepisují v samostatných souborech s názvy \verb|00_uvod.tex| a \verb|00_zaver.tex|. Tyto soubory jsou pro uživatele vytvořeny ve složce \verb|kapitoly| a vloženy do šablony pomocí příkazů:
+Kapitoly "Úvod" a "Závěr" se sepisují v samostatných souborech s názvy \verb|00_uvod.tex| a \verb|00_zaver.tex|. Tyto soubory jsou pro uživatele vytvořeny ve složce \verb|kapitoly| a vloženy do šablony pomocí příkazů:
 
 \begin{itemize}[label={-}]
 	\item \verb|\input{kapitoly/00_uvod}|,
@@ -438,13 +438,13 @@ Zdrojový kód šablony je uložen v souboru \verb|sablona.sty|. Zdrojový kód 
 Celý soubor je rozdělen do sedmi celků:
 
 \begin{enumerate}
-	\item Definice metadat šablony.
-	\item Definice základních příkazů a dat.
-	\item Úvodní textové náležitosti.
-	\item Formátování textu a vzhled stránky.
-	\item Úpravy dalších částí šablony.
-	\item Ostatní pomocné příkazy.
-	\item Multi-jazykové textové definice.
+	\item definice metadat šablony,
+	\item definice základních příkazů a dat,
+	\item úvodní textové náležitosti,
+	\item formátování textu a vzhled stránky,
+	\item úpravy dalších částí šablony,
+	\item ostatní pomocné příkazy,
+	\item multijazykové textové definice.
 \end{enumerate}
 
 
@@ -474,22 +474,22 @@ Příkaz: \verb|\ProvidesPackage{sablona}[\filedate Šablona v\fileversion]|.
 Tato část zdrojového kódu definuje nové příkazy pro:
 
 \begin{enumerate}
-	\item Druh závěrečné práce.
-	\item Název závěrečné práce.
-	\item Odkaz na elektronickou publikaci závěrečné práce.
-	\item Autor závěrečné práce.
-	\item Vedoucí závěrečné práce.
-	\item Ústav.
-	\item Město.
-	\item Rok obhajoby.
-	\item Datum odevzdání.
-	\item Zpracování jazyka.
+	\item druh závěrečné práce,
+	\item název závěrečné práce,
+	\item odkaz na elektronickou publikaci závěrečné práce,
+	\item autor závěrečné práce,
+	\item vedoucí závěrečné práce,
+	\item ústav,
+	\item město,
+	\item rok obhajoby,
+	\item datum odevzdání,
+	\item zpracování jazyka.
 \end{enumerate}
 
 Využité externí balíčky:
 
 \begin{itemize}[label={-}]
-	\item \verb|ifthen|
+	\item \verb|ifthen|.
 \end{itemize}
 
 
@@ -568,7 +568,7 @@ Kód příkazu:
    }
 \end{verbatim}
 
-Příkaz ukládá vložený argument (odkaz na el. publikaci) do proměnné \verb|odkaz|.
+Příkaz ukládá vložený argument (odkaz na elektronickou publikaci) do proměnné \verb|odkaz|.
 
 \vspace{8pt}
 
@@ -604,7 +604,7 @@ Příkaz definuje následující čtyři proměnné:
 
 Pokud autor nemá tituly za jménem, do proměnné \verb|autor@za| je vložen prázdný řetězec, pokud tituly za jménem má, je do této proměnné vložena nejdříve čárka (tituly jsou od příjmení odděleny čárkou), poté nezlomitelná mezera a nakonec tituly.
 
-Kontrola, jestli autor má nebo nemá tituly za jménem zajišťuje porovnání znakových řetězců. Je-li čtvrtým argumentem příkazu prázdný textový řetězec, je proměnná ukládající tituly za jménem prázdná. Převod argumentu na řetězec znaků poskytuje příkaz \verb|\detokenize{}|.
+Kontrola, jestli autor má nebo nemá tituly za jménem, zajišťuje porovnání znakových řetězců. Je-li čtvrtým argumentem příkazu prázdný textový řetězec, je proměnná ukládající tituly za jménem prázdná. Převod argumentu na řetězec znaků poskytuje příkaz \verb|\detokenize{}|.
 
 Schéma kontroly titulů za jménem:
 
@@ -672,7 +672,7 @@ Kód příkazu:
    }
 \end{verbatim}
 
-Příkaz vytvoří proměnnou \verb|ustav| a přiřadí ji obsah argumentu z příkazu.
+Příkaz vytvoří proměnnou \verb|ustav| a přiřadí jí obsah argumentu z příkazu.
 
 \vspace{8pt}
 \textbf{Město}\\
@@ -721,10 +721,10 @@ Příkaz definuje proměnnou \verb|odevzdani|, které předává svůj argument.
 Definuje nový příkaz pro zadání jazyka. Jazyk zpracování se zadává ve formě zkratky:
 
 \begin{itemize}[label={-}]
-	\item \verb|cz-en| = primární jazyk: čeština, sekundární jazyk: angličtina.
-	\item \verb|sk-en| = primární jazyk: slovenština, sekundární jazyk: angličtina.
-	\item \verb|en-cz| = primární jazyk: angličtina, sekundární jazyk: čeština.
-	\item \verb|en-sk| = primární jazyk: angličtina, sekundární jazyk: slovenština. 
+	\item \verb|cz-en| = primární jazyk: čeština, sekundární jazyk: angličtina;
+	\item \verb|sk-en| = primární jazyk: slovenština, sekundární jazyk: angličtina;
+	\item \verb|en-cz| = primární jazyk: angličtina, sekundární jazyk: čeština;
+	\item \verb|en-sk| = primární jazyk: angličtina, sekundární jazyk: slovenština.
 \end{itemize}
 
 V případě, že uživatel zadá špatnou zkratku, případně nezadá žádnou zkratku, bude automaticky nastavena možnost \verb|cz-en|.
@@ -749,7 +749,7 @@ Kód příkazu:
    }
 \end{verbatim}
 
-Na základě kontroly podmínky volá příkaz jeden z následujících příkazů pro aktivaci multi-jazykových textových definicí (viz kapitola \ref{sec:texty}):
+Na základě kontroly podmínky volá příkaz jeden z následujících příkazů pro aktivaci multijazykových textových definicí (viz kapitolu \ref{sec:texty}):
 
 \begin{enumerate}
 	\item \verb|\jazyk@sk@en|,
@@ -786,6 +786,7 @@ Jednotlivé textové náležitosti se sázejí na čistou samostatnou stranu (st
 
 Nadpisy jednotlivých částí mají stejný formát jako nadpis kapitol. Nejedná se ovšem o kapitoly jako takové, proto je implementován příkaz \verb|\uvodninadpis{}|, který formátuje jednotlivé nadpisy těchto částí na formát nadpisu kapitoly a přitom nevkládá vstup do obsahu dokumentu. Příkaz je rovněž podrobněji popsán v kapitole \ref{sec:dalsi_upravy}.
 
+\vspace{8pt}
 \textbf{Abstrakt}\\
 Definuje nový příkaz pro zadání abstraktu. Příkaz má dva argumenty pro abstrakt v primárním a sekundárním jazyce.
 
@@ -805,9 +806,9 @@ Kód příkazu:
    }
 \end{verbatim} 
 
-Příkaz deklaruje proměnné \verb|abstrakt@original| a \verb|abstrakt@preklad|, do kterých vkládá text abstraktu v primárním, resp. sekundárním jazyce. Nadpisy v primárním a sekundárním jazyce jsou tvořeny již zmíněným příkazem \verb|\uvodninadpis{}|, kterému jsou předávány proměnné \verb|jazyk@original@abstrakt| a \verb|jazyk@preklad@abstrakt|. Jedná se o proměnné multi-jazykových textových definicí, kterým se věnuje kapitola \ref{sec:texty}.
+Příkaz deklaruje proměnné \verb|abstrakt@original| a \verb|abstrakt@preklad|, do kterých vkládá text abstraktu v primárním, resp. sekundárním jazyce. Nadpisy v primárním a sekundárním jazyce jsou tvořeny již zmíněným příkazem \verb|\uvodninadpis{}|, kterému jsou předávány proměnné \verb|jazyk@original@abstrakt| a \verb|jazyk@preklad@abstrakt|. Jedná se o proměnné multijazykových textových definicí, kterým se věnuje kapitola \ref{sec:texty}.
 
-Příkaz \verb|\noindent| zajišťuje zarovnání textu k levému okraji nehledě na uživatelskou volbu oddělování odstavců. V Případě volby oddělení odstavců horizontální zarážkou (viz kapitola \ref{sec:nastaveni}) tuto zarážku potlačí.
+Příkaz \verb|\noindent| zajišťuje zarovnání textu k levému okraji nehledě na uživatelskou volbu oddělování odstavců. V případě volby oddělení odstavců horizontální zarážkou (viz kapitolu \ref{sec:nastaveni}) tuto zarážku potlačí.
 
 \vspace{8pt}
 \textbf{Klíčová slova}\\
@@ -828,23 +829,23 @@ Kód příkazu:
    }
 \end{verbatim}
 
-Příkaz vytvoří proměnné \verb|klicovaslova@original| a \verb|klicovaslova@preklad|, do kterých předá obsah svých argumentů (klíčová slova v hlavním a vedlejším jazyce). Pomocí multi-jazykových definicí (viz kapitola \ref{sec:texty}) předá signál příkazu \verb|\uvodninadpis{}| pro tvorbu nadpisů \uv{KLÍČOVÁ SLOVA} v hlavním jazyce i jazyce vedlejším.
+Příkaz vytvoří proměnné \verb|klicovaslova@original| a \verb|klicovaslova@preklad|, do kterých předá obsah svých argumentů (klíčová slova v hlavním a vedlejším jazyce). Pomocí multijazykových definicí (viz kapitolu \ref{sec:texty}) předá signál příkazu \verb|\uvodninadpis{}| pro tvorbu nadpisů "KLÍČOVÁ SLOVA" v hlavním jazyce i jazyce vedlejším.
 
 Příkaz \verb|\vfill| zajišťuje rovnoměrné vertikální odsazení od abstraktu a konce stránky.
 
 \vspace{8pt}
 \textbf{Bibliografická citace}\\
-Definuje nový příkaz pro vysázení bibliografické citace autorovy závěrečné práce. Příkaz je bez argumentu, využívá již dříve deklarovaných příkazů a jejich dat v následující pořadí:
+Definuje nový příkaz pro vysázení bibliografické citace autorovy závěrečné práce. Příkaz je bez argumentu, využívá již dříve deklarovaných příkazů a jejich dat v následujícím pořadí:
 
 \begin{enumerate}
-	\item Jméno a příjmení autora.
-	\item Název závěrečné práce.
-	\item Město.
-	\item Rok obhajoby.
-	\item Odkaz na elektronickou publikaci závěrečné práce.
-	\item Typ závěrečné práce.
-	\item Ústav.
-	\item Jméno a příjmení vedoucího včetně veškerých titulů.
+	\item jméno a příjmení autora,
+	\item název závěrečné práce,
+	\item město,
+	\item rok obhajoby,
+	\item odkaz na elektronickou publikaci závěrečné práce,
+	\item typ závěrečné práce,
+	\item ústav,
+	\item jméno a příjmení vedoucího včetně veškerých titulů.
 \end{enumerate}
 
 Kód příkazu:
@@ -866,7 +867,7 @@ Kód příkazu:
 
 Příkaz vytvoří nový list pomocí příkazu \verb|\cleardoublepage| a odstraní z něj formátování pomocí příkazu \verb|\thispagestyle{empty}|. Dále vytvoří prázdný box pomocí \verb|\hbox{}|, do kterého pomocí příkazu \verb|\vfill| vloží vertikální mezeru tak, aby bibliografická citace byla umístěna na konci strany.
 
-Samotný nadpis je deklarován v multi-jazykové proměnné \verb|jazyk@original@citace| v kapitole \ref{sec:texty}.
+Samotný nadpis je deklarován v multijazykové proměnné \verb|jazyk@original@citace| v kapitole \ref{sec:texty}.
 
 Schéma posloupnosti sázení textové části citace dle normy ČSN ISO 690:
 
@@ -882,7 +883,7 @@ Velkými písmeny vlož příjmení autora, poté jméno.
 
 Typografickou sazbu příjmení autora velkými písmeny zajišťuje příkaz \verb|MakeUppercase{}| a sazbu názvu závěrečné práce poté příkaz \verb|\textit{}|.
 
-Fráze \uv{\textit{Dostupné také z: }}, \uv{\textit{Vedoucí práce: }} a názvy univerzity a fakulty jsou definovány v kapitole \ref{sec:texty} jako multi-jazykové proměnné:
+Fráze \textit{"Dostupné také z:"}, \textit{"Vedoucí práce:"} a názvy univerzity a fakulty jsou definovány v kapitole \ref{sec:texty} jako multijazykové proměnné:
 
 \begin{itemize}[label=-]
 	\item \verb|jazyk@original@citace@odkaz|,
@@ -895,7 +896,7 @@ Fráze \uv{\textit{Dostupné také z: }}, \uv{\textit{Vedoucí práce: }} a náz
 \textbf{Čestné prohlášení}\\
 Definuje nový příkaz pro zadání čestného prohlášení. Příkaz deklaruje novou proměnnou \verb|prohlaseni|, do které předává svůj argument (textový obsah prohlášení).
 
-Pomocí příkazů \verb|\cleardoublepage| a \verb|\thispagestyle{empty}|. Je vytvořen nový čistý list. Čestné prohlášení je umístěno na konec strany pomocí příkazů \verb|\hbox{}| a \verb|\vfill|.
+Pomocí příkazů \verb|\cleardoublepage| a \verb|\thispagestyle{empty}| je vytvořen nový čistý list. Čestné prohlášení je umístěno na konec strany pomocí příkazů \verb|\hbox{}| a \verb|\vfill|.
 
 Kód příkazu:
 
@@ -917,9 +918,9 @@ Kód příkazu:
 
 Za textovým obsahem prohlášení následuje datum odevzdání a prostor pro autorův podpis. To je od textu prohlášení odděleno vertikální mezerou o velikosti 2\,cm pomocí příkazu \verb|\vspace{2cm}|.
 
-Příkaz využije multi-jazykové proměnné \verb|jazyk@original@podpis| pro vložení textové fráze \uv{\textit{V Brně dne}}, za kterou následuje datum odevzdání. Následně příkaz na stejném řádku vytvoří horizontální mezeru \verb|\hfill| a vytvoří box dlouhý 6\,cm \verb|\makebox[6cm]{}|, který vyplní tečkami \verb|\dotfill|.
+Příkaz využije multijazykové proměnné \verb|jazyk@original@podpis| pro vložení textové fráze \textit{"V Brně dne"}, za kterou následuje datum odevzdání. Následně příkaz na stejném řádku vytvoří horizontální mezeru \verb|\hfill| a vytvoří box dlouhý 6 cm \verb|\makebox[6cm]{}|, který vyplní tečkami \verb|\dotfill|.
 
-Na novém řádku vytvoří nový box a délce řádku \verb|\makebox[\textwidth]{}|. Do tohoto boxu vloží horizontální odsazení \verb|\hfill| a nový box dlouhý 6\,cm se zarovnáním na střed \verb|\makebox[6cm][c]{}|. Do tohoto boxu následně vloží jméno autora závěrečné práce včetně jeho titulů.
+Na novém řádku vytvoří nový box o délce jednoho řádku \verb|\makebox[\textwidth]{}|. Do tohoto boxu vloží horizontální odsazení \verb|\hfill| a nový box dlouhý 6\,cm se zarovnáním na střed \verb|\makebox[6cm][c]{}|. Do tohoto boxu následně vloží jméno autora závěrečné práce včetně jeho titulů.
 
 \vspace{8pt}
 \textbf{Poděkování}\\
@@ -948,12 +949,12 @@ Pomocí příkazů \verb|\cleardoublepage|, \verb|\thispagestyle{empty}|, \verb|
 Tato část nastavuje vzhled dokumentu prostřednictvím následujících položek:
 
 \begin{enumerate}
-	\item Formátování rozměrů stránky.
-	\item Formátování písma a odstavců.
-	\item Formátování nadpisů kapitol.
-	\item Formátování popisků obrázků a tabulek.
-	\item Formát číslování obrázků, tabulek a rovnic.
-	\item Hlavička a patička dokumentu.
+	\item formátování rozměrů stránky,
+	\item formátování písma a odstavců,
+	\item formátování nadpisů kapitol,
+	\item formátování popisků obrázků a tabulek,
+	\item formát číslování obrázků, tabulek a rovnic,
+	\item hlavička a patička dokumentu.
 \end{enumerate}
 
 Využité externí balíčky:
@@ -998,16 +999,16 @@ Kód příkazu:
 Příkaz má následující parametry:
 
 \begin{itemize}[label=-]
-	\item \verb|left| pro nastavení velikosti levého okraje.
-	\item \verb|top| pro nastavení velikosti horního okraje.
-	\item \verb|text| pro nastavení velikosti textové oblasti.
+	\item \verb|left| pro nastavení velikosti levého okraje,
+	\item \verb|top| pro nastavení velikosti horního okraje,
+	\item \verb|text| pro nastavení velikosti textové oblasti,
 	\item \verb|footskip| pro nastavení velikosti mezery mezi koncem textové oblasti a číslem strany.
 \end{itemize}
 
 \vspace{8pt}
 
 \textbf{Formátování písma a odstavců}\\
-Nastavuje výchozí písmo pro celý dokument, jeho velikost a řádkování. Zároveň nastavuje mezery mezi odstavci a definuje novou uživatelskou volbu pro oddělování odstavců (viz kapitola \ref{sec:nastaveni}).
+Nastavuje výchozí písmo pro celý dokument, jeho velikost a řádkování. Zároveň nastavuje mezery mezi odstavci a definuje novou uživatelskou volbu pro oddělování odstavců (viz kapitolu \ref{sec:nastaveni}).
 
 Pomocí příkazu \verb|\usepackage{lmodern}| je typ písma změněn na \verb|Latin Modern Roman|.
 
@@ -1063,19 +1064,18 @@ Parametr \verb|parskip| nastavuje vertikální mezery mezi odstavci v celém dok
 Z tohoto důvodu je nutné provést dvojí nastavení formátu nadpisů kapitol pomocí příkazů \verb|\kapitoly@volba@prvni| a \verb|\kapitoly@volba@druha|.
 
 \vspace{8pt}
-
 \textbf{Formátování nadpisů kapitol}\\
-Definuje nové příkazy \verb|\kapitoly@volba@prvni| a \verb|\kapitoly@volba@druha|. Oba příkazy mají stejnou definici -- nastavují formátování nadpisů kapitol. Jak je již zmíněno v předchozích odstavcích, je nutné respektovat parametr \verb|parskip|. Na následujících řádcích jsou ukázány části kódu pro jednotlivé typy nadpisů (na základě volby dělení odstavců č. 1, viz kapitola \ref{sec:nastaveni}).
+Definuje nové příkazy \verb|\kapitoly@volba@prvni| a \verb|\kapitoly@volba@druha|. Oba příkazy mají stejnou definici -- nastavují formátování nadpisů kapitol. Jak je již zmíněno v předchozích odstavcích, je nutné respektovat parametr \verb|parskip|. Na následujících řádcích jsou ukázány části kódu pro jednotlivé typy nadpisů (na základě volby dělení odstavců č. 1, viz kapitolu \ref{sec:nastaveni}).
 
 Kapitola úrovně 1 (X):\\
 Příkaz: \verb|\chapter{}|.
 
 \begin{itemize}[label=-]
-	\item Začíná vždy na nové straně.
-	\item Kapitálky.
-	\item Tučný text.
-	\item Velikost písma 16 pt.
-	\item Odsazení za nadpisem 24 pt.
+	\item začíná vždy na nové straně,
+	\item kapitálky,
+	\item tučný text,
+	\item velikost písma 16 pt,
+	\item odsazení za nadpisem 24 pt.
 \end{itemize}
 
 Kód nastavení:
@@ -1105,10 +1105,10 @@ Kapitola úrovně 2 (X.X):\\
 Příkaz: \verb|\section{}|.
 
 \begin{itemize}[label=-]
-	\item Tučný text.
-	\item Velikost písma 14 pt.
-	\item Odsazení před nadpisem 24 pt
-	\item Odsazení za nadpisem 12 pt.
+	\item tučný text,
+	\item velikost písma 14 pt,
+	\item odsazení před nadpisem 24 pt,
+	\item odsazení za nadpisem 12 pt.
 \end{itemize}
 
 Kód nastavení:
@@ -1125,10 +1125,10 @@ Kapitola úrovně 3 (X.X.X):\\
 Příkaz: \verb|\subsection{}|.
 
 \begin{itemize}[label=-]
-	\item Tučný text.
-	\item Velikost písma 13 pt.
-	\item Odsazení před nadpisem 12 pt
-	\item Odsazení za nadpisem 6 pt.
+	\item tučný text,
+	\item velikost písma 13 pt,
+	\item odsazení před nadpisem 12 pt,
+	\item odsazení za nadpisem 6 pt.
 \end{itemize}
 
 Kód nastavení:
@@ -1163,7 +1163,7 @@ Popisek tabulky se zpravidla umisťuje nad tabulku a je zarovnán doleva. Zarovn
 Definuje nový příkaz pro volbu číslování. Uživatel má na výběr dvě možnosti:
 
 \begin{enumerate}
-	\item Číslo obsahuje i číslo hlavní hlavní kapitoly, tzn. číslo bude ve formátu X.X: Popisek.
+	\item Číslo obsahuje i číslo hlavní kapitoly, tzn. číslo bude ve formátu X.X: Popisek.
 	\item Číslo obsahuje pouze pořadové číslo, tzn. bude ve formátu X: Popisek.
 \end{enumerate}
 
@@ -1215,7 +1215,7 @@ Pro vložení loga fakulty a univerzity do hlavičky liché, resp. sudé stránk
 	\item \verb|\logoVUT| pro logo VUT.
 \end{enumerate}
 
-Příkaz \verb|\logoFSI| využívá již dříve vytvořeného přepínače (boolean) \verb|logo_EN| (viz kapitola \ref{subsec:definice_prikazy}).
+Příkaz \verb|\logoFSI| využívá již dříve vytvořeného přepínače (boolean) \verb|logo_EN| (viz kapitolu \ref{subsec:definice_prikazy}).
 
 Kód příkazu:
 
@@ -1244,7 +1244,7 @@ Příkaz \verb|\logoVUT|:
 
 Stejně jako v případě loga fakulty je velikost VUT loga nastavena na 16 pt a posunutí nastaveno na 1,5 pt směrem vzhůru.
 
-Pole hlavičky má výšku 20 pt, kterou nastavuje příkaz \verb|\setlength{\headheight}{20pt}|. Hlavička je od textové oblasti oddělena horizontální čárou o tloušťce 0,4 pt. Toto zajišťuje příkaz \verb|\renewcommand{\headrulewidth}{0.4pt}|. V Případě patičky je oddělovací čára skryta pomocí příkazu \verb|\renewcommand{\footrulewidth}{0pt}|.
+Pole hlavičky má výšku 20 pt, kterou nastavuje příkaz \verb|\setlength{\headheight}{20pt}|. Hlavička je od textové oblasti oddělena horizontální čárou o tloušťce 0,4 pt. Toto zajišťuje příkaz \verb|\renewcommand{\headrulewidth}{0.4pt}|. V případě patičky je oddělovací čára skryta pomocí příkazu \verb|\renewcommand{\footrulewidth}{0pt}|.
 
 Typografická sazba hlavičky je prováděna pomocí sekvence příkazů:
 
@@ -1274,9 +1274,9 @@ A anglické zkratky sudé a liché strany:
 Umístění položek v hlavičce:
 
 \begin{itemize}[label=-]
-	\item \verb|[LO]| logo VUT, horizontální mezera 0,5 em, VUT fontem jméno a příjmení autora včetně titulů.
-	\item \verb|[RO]| VUT fontem typ práce.
-	\item \verb|[LE]| logo FSI, horizontální mezera 0,5 em, VUT fontem název ústavu.
+	\item \verb|[LO]| logo VUT, horizontální mezera 0,5 em, VUT fontem jméno a příjmení autora včetně titulů;
+	\item \verb|[RO]| VUT fontem typ práce;
+	\item \verb|[LE]| logo FSI, horizontální mezera 0,5 em, VUT fontem název ústavu;
 	\item \verb|[RE]| VUT fontem město a rok obhajoby.
 \end{itemize}
 
@@ -1304,7 +1304,7 @@ Využité externí balíčky:
 \end{itemize}
 
 \textbf{Úprava zobrazení obsahu}\\
-V případě volby dělení odstavců možností č. 2 (viz kapitola \ref{sec:nastaveni}) docházelo k vkládání odstavcové mezery mezi jednotlivé vstupy kapitol v obsahu. Z toho důvodu byl vytvořen příkaz \verb|\obsah|, který využívá standardního \LaTeX\ příkazu \verb|\tableofcontents| pro tvorbu obsahu, ale ruší u něj vkládání odstavcové mezery.
+V případě volby dělení odstavců možností č. 2 (viz kapitolu \ref{sec:nastaveni}) docházelo k vkládání odstavcové mezery mezi jednotlivé vstupy kapitol v obsahu. Z toho důvodu byl vytvořen příkaz \verb|\obsah|, který využívá standardního \LaTeX\ příkazu \verb|\tableofcontents| pro tvorbu obsahu, ale ruší u něj vkládání odstavcové mezery.
 
 \newpage
 Kód příkazu:
@@ -1320,7 +1320,7 @@ Příkaz využívá dvojité složené závorky \verb|{{...}}|, aby vyrušení o
 
 \vspace{8pt}
 \textbf{Křížové odkazy a PDF metadata}\\
-Dochází k nastavení křížových odkazů v rámci dokumentu. Při prohlížení PDF dokumentu je možné v obsahu kliknout na kapitolu a prohlížeč uživatele automaticky přesune na vybranou kapitolu. Totéž funguje i při kliknutí na citaci, číslo obrázku nebo kapitolu, na kterou se uživatel během textu odkazuje. Vytvoření křížového odkazu je možné pomocí dvojice příkazů \verb|\label{NAZEV_ODKAZU}| a \verb|\ref{NAZEV_ODKAZU}|. Příkaz \verb|\label{}| vytvoří místo, na které bude následně příkazem \verb|\ref{}| odkazováno. Název odkazu je volitelný.
+Dochází k nastavení křížových odkazů v rámci dokumentu. Při prohlížení PDF dokumentu je možné v obsahu kliknout na kapitolu a prohlížeč uživatele automaticky přesune na vybranou kapitolu. Totéž funguje i při kliknutí na citaci, číslo obrázku nebo kapitolu, na kterou uživatel během textu odkazuje. Vytvoření křížového odkazu je možné pomocí dvojice příkazů \verb|\label{NAZEV_ODKAZU}| a \verb|\ref{NAZEV_ODKAZU}|. Příkaz \verb|\label{}| vytvoří místo, na které bude následně příkazem \verb|\ref{}| odkazováno. Název odkazu je volitelný.
 
 Předání dat PDF prohlížeči:
 
@@ -1357,10 +1357,10 @@ Další nastavení je implementováno kódem:
 Význam jednotlivých parametrů:
 
 \begin{itemize}[label=-]
-	\item \verb|pdfstartview={}| respektuje nastavení zobrazení PDF prohlížeče, tj. nepřepisuje jej.
-	\item \verb|pdfdisplaydoctitle=true| zajišťuje zobrazení názvu závěrečné práce ve stavové liště prohlížeče místo názvu souboru, pod kterým je dokument uložen.
-	\item \verb|baseurl=\odkaz| předává prohlížeči odkaz na elektronickou publikaci závěrečné práce.
-	\item \verb|colorlinks=true| umožňuje nastavit barvu křížových i webových odkazů.
+	\item \verb|pdfstartview={}| respektuje nastavení zobrazení PDF prohlížeče, tj. nepřepisuje jej,
+	\item \verb|pdfdisplaydoctitle=true| zajišťuje zobrazení názvu závěrečné práce ve stavové liště prohlížeče místo názvu souboru, pod kterým je dokument uložen,
+	\item \verb|baseurl=\odkaz| předává prohlížeči odkaz na elektronickou publikaci závěrečné práce,
+	\item \verb|colorlinks=true| umožňuje nastavit barvu křížových i webových odkazů,
 	\item \verb|allcolors=black| nastavuje barvu všech odkazů (křížových i webových) na černou.
 \end{itemize}
 
@@ -1369,20 +1369,20 @@ Význam jednotlivých parametrů:
 \textbf{Citační balíček}\\
 Sekce pomocí příkazu \verb|\RequirePackage{cite}| aktivuje citační balíček \verb|cite| a následně mu pomocí příkazu \verb|\bibliographystyle{czplain}| přiřadí styl citování \verb|czplain|. 
 
-Stylový balíček \verb|czplain| pochází ze šablony závěrečných prací na Fakultě informačních technologií VUT a autorem této šablon byl částečně modifikován z důvodu změny citační normy ČSN EN ISO 690 na konci roku 2022. Zdrojový soubor tohoto stylového balíčku je možné stáhnout na webových stránkách FIT: fit.vut.cz/study/theses/master-theses/.cs.
+Stylový balíček \verb|czplain| pochází ze šablony závěrečných prací na Fakultě informačních technologií VUT a autorem této šablony byl částečně modifikován z důvodu změny citační normy ČSN EN ISO 690 na konci roku 2022. Zdrojový soubor tohoto stylového balíčku je možné stáhnout na webových stránkách FIT: fit.vut.cz/study/theses/master-theses/.cs.
 
 \vspace{8pt}
 
 \textbf{Prostředí verbatim}\\
-Prostředí verbatim je využíváno pro zobrazení kódu v textu. Text napsaný uvnitř prostředí \verb|verbatim| je zobrazován tak jak je napsán, tj. žádné příkazy uvnitř tohoto prostředí nejsou překládány (nevykonávají svou funkci). Všechny ukázky kódů příkazů v tomto dokumentu jsou psány právě v prostředí Verbatim.
+Prostředí \verb|verbatim| je využíváno pro zobrazení kódu v textu. Text napsaný uvnitř prostředí \verb|verbatim| je zobrazován tak, jak je napsán, tj. žádné příkazy uvnitř tohoto prostředí nejsou překládány (nevykonávají svou funkci). Všechny ukázky kódů příkazů v tomto dokumentu jsou psány právě v prostředí \verb|verbatim|.
 
-Balíček \verb|etoolbox| umožňuje upravit odsazení před a za prostředím verbatim. Toho je docíleno pomocí příkazu \verb|\preto{\@verbatim}{\topsep=0pt \partopsep=0pt}|, který mezery před a za tímto prostředím nastavuje na velikost 0 pt.
+Balíček \verb|etoolbox| umožňuje upravit odsazení před a za prostředím \verb|verbatim|. Toho je docíleno pomocí příkazu \verb|\preto{\@verbatim}{\topsep=0pt \partopsep=0pt}|, který mezery před a za tímto prostředím nastavuje na velikost 0 pt.
 
 
 
 
 \subsection{Ostatní pomocné příkazy}
-Krátký celek obsahující pomocné příkazy pro tvorbu prázdné dvojstránky, resp. prázdné sudé stránky a pro tvorbu nadpisů úvodních textových náležitostí (viz podkapitola \ref{subsec:nalezitosti_sablona}).
+Krátký celek obsahující pomocné příkazy pro tvorbu prázdné dvojstránky, resp. prázdné sudé stránky a pro tvorbu nadpisů úvodních textových náležitostí (viz podkapitolu \ref{subsec:nalezitosti_sablona}).
 
 \textbf{Prázdná sudá stránka}\\
 Upravuje vnitřní příkaz systému \LaTeX\ \verb|\cleardoublepage|. Při použití příkazu je kontrolováno, zdali je dokument tisknut oboustranně a zdali se dokument nachází na liché straně. Pokud ano, zapamatuje si její číslo. Pokud ne, je vytvořena prázdná sudá strana (tj. strana bez záhlaví a zápatí).
@@ -1414,11 +1414,11 @@ Jak již bylo zmíněno v podkapitole \ref{subsec:nalezitosti_sablona}, pro úvo
 Formátování nadpisu:
 
 \begin{itemize}[label=-]
-	\item Kapitálky.
-	\item Tučný text.
-	\item Velikost písma 16 pt.
-	\item Odsazení před nadpisem 24 pt.
-	\item Odsazení za nadpisem 6 pt.
+	\item kapitálky,
+	\item tučný text,
+	\item velikost písma 16 pt,
+	\item odsazení před nadpisem 24 pt,
+	\item odsazení za nadpisem 6 pt.
 \end{itemize}
 
 Kód příkazu:
@@ -1431,7 +1431,7 @@ Kód příkazu:
    }
 \end{verbatim}
 
-\subsection{Multi-jazykové textové definice}
+\subsection{Multijazykové textové definice}
 \label{sec:texty}
 Na základě volby jazyka zpracování definuje jednotlivé textové řetězce používané v rámci dokumentu.
 
@@ -1455,37 +1455,37 @@ Seznam jednotlivých textových řetězců:
 \begin{enumerate}
 	\item Název univerzity a fakulty:
 		\begin{itemize}[label=-]
-			\item \verb|\def\jazyk@original@univerzita{Vysoké učení technické v Brně}|.
+			\item \verb|\def\jazyk@original@univerzita{Vysoké učení technické v Brně}|,
 			\item \verb|\def\jazyk@original@fakulta{Fakulta strojního inženýrství}|.
 		\end{itemize}
 	\item Typ práce:
 		\begin{itemize}[label=-]
-			\item \verb|\def\jazyk@original@prace@bc{Bakalářská práce}|.
-			\item \verb|\def\jazyk@original@prace@ing{Diplomová práce}|.
-			\item \verb|\def\jazyk@original@prace@phd{Dizertační práce}|.
+			\item \verb|\def\jazyk@original@prace@bc{Bakalářská práce}|,
+			\item \verb|\def\jazyk@original@prace@ing{Diplomová práce}|,
+			\item \verb|\def\jazyk@original@prace@phd{Dizertační práce}|,
 			\item \verb|\def\jazyk@original@prace@error{Nezadán/neznámý typ práce}|.
 		\end{itemize}
 	\item Úvodní textové náležitosti a jejich překlad:
 		\begin{itemize}[label=-]
-			\item \verb|\def\jazyk@original@abstrakt{Abstrakt}|.
+			\item \verb|\def\jazyk@original@abstrakt{Abstrakt}|,
 			\begin{itemize}[label=-]
-				\item \verb|\def\jazyk@preklad@abstrakt{Abstract}|.
+				\item \verb|\def\jazyk@preklad@abstrakt{Abstract}|,
 			\end{itemize}
-			\item \verb|\def\jazyk@original@klicovaslova{Klíčová slova}|.
+			\item \verb|\def\jazyk@original@klicovaslova{Klíčová slova}|,
 			\begin{itemize}[label=-]
-				\item \verb|\def\jazyk@preklad@klicovaslova{Keywords}|.
+				\item \verb|\def\jazyk@preklad@klicovaslova{Keywords}|,
 			\end{itemize}
-			\item \verb|\def\jazyk@original@citace{Bibliografická citace}|.
+			\item \verb|\def\jazyk@original@citace{Bibliografická citace}|,
 			\begin{itemize}[label=-]
-				\item \verb|\def\jazyk@original@citace@odkaz{Dostupné také z: }|.
-				\item \verb|\def\jazyk@original@citace@vedouci{Vedoucí práce:}|.
+				\item \verb|\def\jazyk@original@citace@odkaz{Dostupné také z: }|,
+				\item \verb|\def\jazyk@original@citace@vedouci{Vedoucí práce:}|,
 			\end{itemize}
-			\item \verb|\def\jazyk@original@prohlaseni{Čestné prohlášení}|.
-			\item \verb|\def\jazyk@original@podpis{V Brně dne}|.
+			\item \verb|\def\jazyk@original@prohlaseni{Čestné prohlášení}|,
+			\item \verb|\def\jazyk@original@podpis{V Brně dne}|,
 			\item \verb|\def\jazyk@original@podekovani{Poděkování}|.
 		\end{itemize}
 \end{enumerate}
 
-Textové řetězce ostatních jazykových mutací jsou totožné, pouze jsou přeloženy do patřičného jazyka.
+Textové řetězce ostatních jazykových mutací jsou totožné, pouze jsou přeloženy do příslušného jazyka.
 
 %--------------------------------%
