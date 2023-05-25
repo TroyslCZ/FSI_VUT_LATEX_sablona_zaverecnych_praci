@@ -1,6 +1,8 @@
 # FSI VUT Šablona závěrečných prací v systému LATEX
 Šablona závěrečných prací v systému LATEX pro Fakultu strojního inženýrství na Vysokém učení technickém v Brně, která vznikla jako bakalářská práce v akademickém roce 2022/2023 na Ústavu automatizace a informatiky.
 
+Pro překlad použít `LuaLaTeX` a `BIBTeX`.
+
 Šablona závěrečné práce je tvořena následujícími soubory:
 
 1. `nastaveni.tex` - soubor pro zadání základních údajů o závěrečné práci (druh závěrečné práce, název, odkaz na elektronickou publikaci, autor, vedoucí, ústav, město, rok obhajoby, datum odevzdání a jazyk zpracování). Dále je nastavováno formátování odstavců a číslování obrázků, tabulek a rovnic.
