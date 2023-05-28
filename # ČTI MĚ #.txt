@@ -1,3 +1,5 @@
+Pro překlad použít LuaLaTeX a BiBTeX.
+
 Šablona závěrečné práce je tvořena následujícími soubory:
 
 1. nastaveni.tex
