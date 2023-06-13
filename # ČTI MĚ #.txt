@@ -31,7 +31,7 @@ složka pro ukládání souborů ve formátu .tex s textovým obsahem jednotliv�
 3. loga
 složka s logy fakulty a univerzity, která jsou použita v šabloně.
 
-4. obrázky
+4. obrazky
 složka pro ukládání obrázků použitých v textu práce.
 
 5. soubory
