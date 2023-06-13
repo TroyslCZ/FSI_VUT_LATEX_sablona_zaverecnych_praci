@@ -25,7 +25,7 @@ Pro překlad použít `LuaLaTeX` a `BIBTeX`.
 
 3. `loga` - složka s logy fakulty a univerzity, která jsou použita v šabloně.
 
-4. `obrázky` - složka pro ukládání obrázků použitých v textu práce.
+4. `obrazky` - složka pro ukládání obrázků použitých v textu práce.
 
 5. `soubory` - složka pro titulní stranu a zadání ve formátu `.pdf`. Soubory pojmenovat jako `titulni_strana.pdf` a `zadani.pdf`.
 
